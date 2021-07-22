@@ -5,7 +5,10 @@
  */
 package demotienda;
 
+import clasesP.Mantenimiento;
+import clasesP.Proveedor;
 import clasesP.Vendedor;
+import java.util.ArrayList;
 import logistica.Logistica;
 import productos.ProductoTecnologico;
 
@@ -17,9 +20,8 @@ public class Tienda {
     String nombre;
     Logistica logistica;
     Vendedor vendedor;
-    
-//proveedores:Proveedor[1..*]
-//asistenteMantenimineto: Mantenimiento[1..*] 
+    ArrayList<Proveedor> proveedores;
+    ArrayList<Mantenimiento> asistenteMantenimiento;
  
     
     public void actualizarInventario(){}

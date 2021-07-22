@@ -9,12 +9,13 @@ package clasesP;
  *
  * @author gabrielaramos
  */
-public class Mantenimiento extends Persona {
+public class Tecnico extends Persona{
 
-    public Mantenimiento(String nombre) {
+    public Tecnico(String nombre) {
         super(nombre);
     }
     
-    
-    public void verProductosEnReparacion(){}
+    public boolean constatarTipoFallo(){
+        return false;
+    }
 }

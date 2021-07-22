@@ -9,6 +9,12 @@ package clasesP;
  *
  * @author gabrielaramos
  */
-public class Proveedor {
+public class Proveedor extends Persona {
+
+    public Proveedor(String nombre) {
+        super(nombre);
+    }
     
+    public void verProductosDisponibles(){}
+
 }

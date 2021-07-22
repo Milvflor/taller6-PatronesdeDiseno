@@ -9,12 +9,14 @@ package clasesP;
  *
  * @author gabrielaramos
  */
-public class Mantenimiento extends Persona {
+public class JefeInventario extends Persona {
 
-    public Mantenimiento(String nombre) {
+    public JefeInventario(String nombre) {
         super(nombre);
     }
     
-    
-    public void verProductosEnReparacion(){}
+    public boolean certificarExistencia(){
+        return false;
+    }
+
 }

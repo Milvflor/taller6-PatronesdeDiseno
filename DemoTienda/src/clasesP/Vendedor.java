@@ -9,6 +9,15 @@ package clasesP;
  *
  * @author gabrielaramos
  */
-public class Vendedor {
+public class Vendedor extends Persona {
+
+    public Vendedor(String nombre) {
+        super(nombre);
+    }
+    
+    public void verProductosDisponibles(){
+    
+    }
+
     
 }
