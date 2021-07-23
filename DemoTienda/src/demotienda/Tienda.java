@@ -10,7 +10,7 @@ import patrones.chainofresponsibility.Mantenimiento;
 import patrones.chainofresponsibility.Persona;
 import patrones.chainofresponsibility.Proveedor;
 import patrones.chainofresponsibility.Vendedor;
-import patrones.factorymethod.Logistica;
+import patrones.factorymethod.Vehiculo;
 import patrones.observer.I_Observable;
 import patrones.observer.Notificador;
 
@@ -25,7 +25,7 @@ import productos.ProductoTecnologico;
  */
 public class Tienda implements I_Observable {
     public String nombre;
-    public Logistica logistica;
+    public Vehiculo vehiculo;
     public Inventario inventario;
     public ArrayList<Persona> personal;
     public ProductoTecnologico changeStateP;
@@ -46,7 +46,7 @@ public class Tienda implements I_Observable {
     	}
     }
     
-    public void realizarEnvio(ProductoTecnologico p, Logistica l){}
+    public void realizarEnvio(ProductoTecnologico p, Vehiculo l){}
     
     public void changeState(TipodeEstado estado, ProductoTecnologico producto) {
     	producto.setEstado(estado);

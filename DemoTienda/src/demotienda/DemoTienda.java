@@ -5,7 +5,8 @@
  */
 package demotienda;
 import Enum.TipodeEstado;
-import patrones.factorymethod.Aerea;
+import patrones.factorymethod.CreadorAereo;
+import patrones.factorymethod.Vehiculo;
 import productos.*;
 
 /**
@@ -21,9 +22,11 @@ public class DemoTienda {
         
         //Codigo prueba 
         Celular producto= new Celular("AI8","Apple","Iphone 8",850,true,"Ninguno",TipodeEstado.disponible);
-        Aerea log = new Aerea(producto,"Tienda T&T",4);
+        CreadorAereo ca = new CreadorAereo();
         
-        log.entregarProducto();
+        Vehiculo avion = ca.crearVehiculo();
+        
+        avion.distribuir();		// no imprime nada porque arraylist de productos está vacío
     }
     // String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado
 }
