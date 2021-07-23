@@ -5,6 +5,10 @@
  */
 package clasesP;
 
+import demotienda.Inventario;
+import java.util.ArrayList;
+import productos.ProductoTecnologico;
+
 /**
  *
  * @author gabrielaramos
@@ -15,6 +19,12 @@ public class Proveedor extends Persona {
         super(nombre);
     }
     
-    public void verProductosDisponibles(){}
+    public void verProductos(Inventario inv){
+        ArrayList<ProductoTecnologico> prods = inv.getAllDanados();
+        for (ProductoTecnologico p : prods){
+            System.out.println(p);
+        }
+    }
+    
 
 }
