@@ -5,7 +5,7 @@
  */
 package demotienda;
 import Enum.TipodeEstado;
-import logistica.*;
+import patrones.factorymethod.Aerea;
 import productos.*;
 
 /**

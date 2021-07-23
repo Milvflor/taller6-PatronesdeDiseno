@@ -5,17 +5,18 @@
  */
 package demotienda;
 
-import clasesP.Persona;
-import clasesP.Proveedor;
-import clasesP.Vendedor;
+import patrones.chainofresponsibility.Comprador;
+import patrones.chainofresponsibility.Mantenimiento;
+import patrones.chainofresponsibility.Persona;
+import patrones.chainofresponsibility.Proveedor;
+import patrones.chainofresponsibility.Vendedor;
+import patrones.factorymethod.Logistica;
+import patrones.observer.I_Observable;
+import patrones.observer.Notificador;
 
 import java.util.ArrayList;
-import clasesP.Comprador;
-import clasesP.I_Observable;
-import clasesP.Mantenimiento;
-import clasesP.Notificador;
+
 import Enum.TipodeEstado;
-import logistica.Logistica;
 import productos.ProductoTecnologico;
 
 /**

@@ -5,11 +5,11 @@
  */
 package demotienda;
 
-import clasesP.Persona;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import Enum.TipodeEstado;
+import patrones.chainofresponsibility.Persona;
 import productos.ProductoTecnologico;
 
 /**
