@@ -44,7 +44,7 @@ public class Inventario {
     return l;
     }
     
-    public ArrayList<ProductoTecnologico> getAllDañados(String id){
+    public ArrayList<ProductoTecnologico> getAllDanados(String id){
     ArrayList<ProductoTecnologico> l = new ArrayList<>();
         for(String key: elements.keySet()){
             for(int i=0; i<elements.get(key).get("Danado").size();i++){
@@ -66,6 +66,7 @@ public class Inventario {
     return l;
     }
     
+   
     
   }
     

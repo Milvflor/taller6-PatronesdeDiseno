@@ -11,10 +11,10 @@ package productos;
  */
 public class Impresora extends ProductoTecnologico{
 
-    public Impresora(String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
-        super(marca, modelo, precio, garantia, fallo, estado);
+    public Impresora(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+        super(productoID, marca, modelo, precio, garantia, fallo, estado);
     }
-    
+
     @Override
     public void encender(){
         System.out.println("Encendiendo Impresora");
@@ -27,6 +27,10 @@ public class Impresora extends ProductoTecnologico{
         System.out.println("Imprimiendo...");
     }
     
-    
+    @Override
+    public String toString() {
+        return "Impresoras de la marca " + marca + " modelo " + modelo ;
+    }
+        
     
 }

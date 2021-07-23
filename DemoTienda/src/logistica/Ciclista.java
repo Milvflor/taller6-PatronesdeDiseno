@@ -17,5 +17,8 @@ public class Ciclista extends Logistica{
         super(producto, destino, cantidad);
     }
     
-    
+    public void entregarProducto(){
+        System.out.println("Se debe entregar " + cantidad +" " + this.producto +" en " + destino + " vía Ciclista.");
+    }    
+        
 }

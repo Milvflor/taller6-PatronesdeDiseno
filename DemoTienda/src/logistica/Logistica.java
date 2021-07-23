@@ -22,10 +22,11 @@ public class Logistica {
         this.cantidad = cantidad;
     }
     
-    public void entregarProducto(ProductoTecnologico p){
+    public void entregarProducto(){
+        System.out.println("Se debe entregar " + cantidad +" " + this.producto +" en " + destino);
     
     }
 
-    
+  
     
 }

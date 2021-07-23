@@ -11,9 +11,10 @@ package productos;
  */
 public class Celular extends ProductoTecnologico{
 
-    public Celular(String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
-        super(marca, modelo, precio, garantia, fallo, estado);
+    public Celular(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+        super(productoID, marca, modelo, precio, garantia, fallo, estado);
     }
+
     
     @Override
     public void encender(){
@@ -26,5 +27,12 @@ public class Celular extends ProductoTecnologico{
     public void realizarLlamadas(){
         System.out.println("Llamando...");
     }
+    
+    @Override
+    public String toString() {
+        return "Celulares de la marca " + marca + " modelo: " + modelo ;
+    }
+    
+    
     
 }

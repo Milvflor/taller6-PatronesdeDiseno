@@ -11,11 +11,9 @@ package productos;
  */
 public class Television extends ProductoTecnologico {
 
-    public Television(String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
-        super(marca, modelo, precio, garantia, fallo, estado);
+    public Television(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+        super(productoID, marca, modelo, precio, garantia, fallo, estado);
     }
-   
-    
         
     @Override
     public void encender(){
@@ -29,5 +27,12 @@ public class Television extends ProductoTecnologico {
     public void cambiarCanal(){
         System.out.println("Cambiando de Canal...");
     }
+    
+    
+    @Override
+    public String toString() {
+        return "Televisiones de la marca " + marca + " modelo: " + modelo ;
+    }
+        
     
 }
