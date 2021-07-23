@@ -23,7 +23,7 @@ public class Inventario {
     return elements.get(modelo).get("Disponible");
     }
     
-    public ArrayList<ProductoTecnologico> getDañados(String modelo){
+    public ArrayList<ProductoTecnologico> getDanados(String modelo){
 
     return elements.get(modelo).get("Danado");
     }
