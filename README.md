@@ -2,10 +2,11 @@
 # Diseño de Software - ESPOL
 
 ### Integrantes
-* Gabriela Ramos
+* Kevin Muñoz
 * Juan Pita
-* Milca Valdez
+* Gabriela Ramos
 * Loberlly Salazar
+* Milca Valdez
 <br />
 
 
