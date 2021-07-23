@@ -5,6 +5,8 @@
  */
 package productos;
 
+import Enum.TipodeEstado;
+
 /**
  *
  * @author gabrielaramos
@@ -16,9 +18,9 @@ public class ProductoTecnologico {
     double precio;
     boolean garantia;
     String fallo;
-    String estado;
+    TipodeEstado estado;
 
-    public ProductoTecnologico(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+    public ProductoTecnologico(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, TipodeEstado estado) {
         this.productoID = productoID;
         this.marca = marca;
         this.modelo = modelo;
@@ -33,7 +35,7 @@ public class ProductoTecnologico {
         System.out.println("Encendiendo");
     }
     public void apagar(){
-        System.out.println("Encendiendo");
+        System.out.println("Apagado");
     }
 
     public String getMarca() {
@@ -76,11 +78,11 @@ public class ProductoTecnologico {
         this.fallo = fallo;
     }
 
-    public String getEstado() {
+    public TipodeEstado getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(TipodeEstado estado) {
         this.estado = estado;
         
     }

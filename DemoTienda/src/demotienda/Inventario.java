@@ -23,7 +23,7 @@ public class Inventario {
     return elements.get(id).get("Disponible");
     }
     
-    public ArrayList<ProductoTecnologico> getDañados(String id){
+    public ArrayList<ProductoTecnologico> getDanados(String id){
 
     return elements.get(id).get("Danado");
     }

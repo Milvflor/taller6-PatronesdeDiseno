@@ -5,13 +5,15 @@
  */
 package productos;
 
+import Enum.TipodeEstado;
+
 /**
  *
  * @author gabrielaramos
  */
 public class Television extends ProductoTecnologico {
 
-    public Television(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+    public Television(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, TipodeEstado estado) {
         super(productoID, marca, modelo, precio, garantia, fallo, estado);
     }
         
