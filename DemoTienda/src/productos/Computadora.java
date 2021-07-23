@@ -17,17 +17,17 @@ public class Computadora extends ProductoTecnologico {
     
     
         
+    @Override
     public void encender(){
-   
+        System.out.println("Encendiendo Computadora");
     }
-    
+    @Override
     public void apagar(){
-    
+        System.out.println("Apagando Computadora");
     }
     
-    public void computar(){
-    
+    public void computanr(){
+        System.out.println("Computando...");
     }
-    
     
 }

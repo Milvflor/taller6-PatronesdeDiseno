@@ -15,16 +15,16 @@ public class Celular extends ProductoTecnologico{
         super(marca, modelo, precio, garantia, fallo, estado);
     }
     
+    @Override
     public void encender(){
-   
+        System.out.println("Encendiendo Celular");
     }
-    
+    @Override
     public void apagar(){
-    
+        System.out.println("Apagando Celular");
     }
-    
     public void realizarLlamadas(){
-    
+        System.out.println("Llamando...");
     }
     
 }

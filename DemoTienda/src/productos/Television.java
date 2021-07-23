@@ -17,16 +17,17 @@ public class Television extends ProductoTecnologico {
    
     
         
+    @Override
     public void encender(){
-   
+        System.out.println("Encendiendo Television");
     }
-    
+    @Override
     public void apagar(){
-    
+        System.out.println("Apagando Television");
     }
     
     public void cambiarCanal(){
-    
+        System.out.println("Cambiando de Canal...");
     }
     
 }

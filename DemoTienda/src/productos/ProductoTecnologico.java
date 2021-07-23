@@ -26,6 +26,70 @@ public class ProductoTecnologico {
         this.estado = estado;
     }
     
+    public void encender(){
+        System.out.println("Encendiendo");
+    }
+    public void apagar(){
+        System.out.println("Encendiendo");
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public boolean isGarantia() {
+        return garantia;
+    }
+
+    public void setGarantia(boolean garantia) {
+        this.garantia = garantia;
+    }
+
+    public String getFallo() {
+        return fallo;
+    }
+
+    public void setFallo(String fallo) {
+        this.fallo = fallo;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+        
+    }
+
+    public void notificarTodosObservadores(Estado e){
+        e.actualizar();    
+    }
+    
+    @Override
+    public String toString() {
+        return "ProductoTecnologico{" + "marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + ", garantia=" + garantia + ", fallo=" + fallo + ", estado=" + estado + '}';
+    }
     
     
 }

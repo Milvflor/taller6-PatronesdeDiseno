@@ -15,18 +15,18 @@ public class Impresora extends ProductoTecnologico{
         super(marca, modelo, precio, garantia, fallo, estado);
     }
     
-    
-        
+    @Override
     public void encender(){
-   
+        System.out.println("Encendiendo Impresora");
     }
-    
+    @Override
     public void apagar(){
-    
+        System.out.println("Apagando Impresora");
     }
-    
     public void imprimir(){
-    
+        System.out.println("Imprimiendo...");
     }
+    
+    
     
 }
