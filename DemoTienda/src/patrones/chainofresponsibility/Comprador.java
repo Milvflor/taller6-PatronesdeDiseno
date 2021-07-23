@@ -5,12 +5,18 @@
  */
 package patrones.chainofresponsibility;
 
+import java.util.ArrayList;
+
+import demotienda.Inventario;
+import productos.ProductoTecnologico;
+
 /**
  *
  * @author gabrielaramos
  */
 public class Comprador extends Persona {
 
+	private ArrayList<ProductoTecnologico> pts;
     public Comprador(String nombre) {
         super(nombre);
     }
@@ -18,4 +24,10 @@ public class Comprador extends Persona {
     public void verProductos(){}
     
     public void solicitarCambio(){}
+
+	@Override
+	void verProductos(Inventario inv) {
+		// TODO Auto-generated method stub
+		
+	}
 }

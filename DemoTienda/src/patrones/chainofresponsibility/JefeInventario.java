@@ -5,6 +5,8 @@
  */
 package patrones.chainofresponsibility;
 
+import demotienda.Inventario;
+
 /**
  *
  * @author gabrielaramos
@@ -18,5 +20,11 @@ public class JefeInventario extends Persona {
     public boolean certificarExistencia(){
         return false;
     }
+
+	@Override
+	void verProductos(Inventario inv) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

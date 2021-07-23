@@ -5,16 +5,18 @@
  */
 package patrones.chainofresponsibility;
 
+import demotienda.Inventario;
+
 /**
  *
  * @author gabrielaramos
  */
-public class Persona {
+public abstract class Persona {
     String nombre;
 
     public Persona(String nombre) {
         this.nombre = nombre;
     }
     
-    
+    abstract void verProductos(Inventario inv);
 }
