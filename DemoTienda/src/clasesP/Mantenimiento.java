@@ -5,6 +5,10 @@
  */
 package clasesP;
 
+import demotienda.Inventario;
+import java.util.ArrayList;
+import productos.ProductoTecnologico;
+
 /**
  *
  * @author gabrielaramos
@@ -15,6 +19,20 @@ public class Mantenimiento extends Persona {
         super(nombre);
     }
     
+    public void verProductos(Inventario inv){
+        ArrayList<ProductoTecnologico> prods = inv.getAllReparando();
+        for (ProductoTecnologico p : prods){
+            System.out.println(p);
+        }
+    }
     
-    public void verProductosEnReparacion(){}
+    public boolean constatarTipoFallo(ProductoTecnologico prod){
+        boolean retorna = false;
+        if(prod.getFallo().equals("Cubierto por la garantia")){
+            retorna = true;
+        }else if (prod.getFallo().equals("No cubierto por la garantia")){
+            retorna = false;
+        }
+        return retorna;
+    }
 }
