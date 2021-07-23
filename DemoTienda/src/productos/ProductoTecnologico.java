@@ -37,8 +37,20 @@ public class ProductoTecnologico {
     public void apagar(){
         System.out.println("Apagado");
     }
+    
+    
 
-    public String getMarca() {
+    public String getProductoID() {
+		return productoID;
+	}
+
+
+	public void setProductoID(String productoID) {
+		this.productoID = productoID;
+	}
+
+
+	public String getMarca() {
         return marca;
     }
 
