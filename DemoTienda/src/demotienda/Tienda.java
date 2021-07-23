@@ -23,9 +23,9 @@ public class Tienda {
     
  
     
-    public void addProducto(Producto p){
+    public void addProducto(ProductoTecnologico p){
     	
-    	this.inventario.get
+//    	this.inventario.get
     }
     public void realizarEnvio(ProductoTecnologico p, Logistica l){}
     public void changeState(String estado, ProductoTecnologico producto) {}

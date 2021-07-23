@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package demotienda;
-
+import Enum.TipodeEstado;
 import logistica.*;
 import productos.*;
 
@@ -20,7 +20,7 @@ public class DemoTienda {
     public static void main(String[] args) {
         
         //Codigo prueba 
-        Celular producto= new Celular("AI8","Apple","Iphone 8",850,true,"Ninguno","Disponible");
+        Celular producto= new Celular("AI8","Apple","Iphone 8",850,true,"Ninguno",TipodeEstado.disponible);
         Aerea log = new Aerea(producto,"Tienda T&T",4);
         
         log.entregarProducto();
