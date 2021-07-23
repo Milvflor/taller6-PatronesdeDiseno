@@ -18,23 +18,23 @@ public class Inventario {
     private HashMap<String, HashMap<String, ArrayList<ProductoTecnologico>>> elements;
     private Persona jefe;
     
-    public ArrayList<ProductoTecnologico> getDisponible(String id){
+    public ArrayList<ProductoTecnologico> getDisponible(String modelo){
   
-    return elements.get(id).get("Disponible");
+    return elements.get(modelo).get("Disponible");
     }
     
-    public ArrayList<ProductoTecnologico> getDañados(String id){
+    public ArrayList<ProductoTecnologico> getDañados(String modelo){
 
-    return elements.get(id).get("Danado");
+    return elements.get(modelo).get("Danado");
     }
     
-    public ArrayList<ProductoTecnologico> getReparando(String id){
+    public ArrayList<ProductoTecnologico> getReparando(String modelo){
         
-    return elements.get(id).get("Reparando");
+    return elements.get(modelo).get("Reparando");
     
     }
     
-    public ArrayList<ProductoTecnologico> getAllDisponible(String id){
+    public ArrayList<ProductoTecnologico> getAllDisponible(){
     ArrayList<ProductoTecnologico> l = new ArrayList<>();
         for(String key: elements.keySet()){
             for(int i=0; i<elements.get(key).get("Disponible").size();i++){
@@ -44,7 +44,7 @@ public class Inventario {
     return l;
     }
     
-    public ArrayList<ProductoTecnologico> getAllDanados(String id){
+    public ArrayList<ProductoTecnologico> getAllDanados(){
     ArrayList<ProductoTecnologico> l = new ArrayList<>();
         for(String key: elements.keySet()){
             for(int i=0; i<elements.get(key).get("Danado").size();i++){
@@ -56,7 +56,7 @@ public class Inventario {
     
     
     
-    public ArrayList<ProductoTecnologico> getAllReparando(String id){
+    public ArrayList<ProductoTecnologico> getAllReparando(){
         ArrayList<ProductoTecnologico> l = new ArrayList<>();
         for(String key: elements.keySet()){
             for(int i=0; i<elements.get(key).get("Reparando").size();i++){
@@ -66,8 +66,25 @@ public class Inventario {
     return l;
     }
     
+   public void remove(String key){
+       elements.get(key).get("Disponible").remove(0);
+   }
    
+   public boolean productoDisponible(ProductoTecnologico p){
+   ArrayList<ProductoTecnologico> l= getAllDisponible();
+   
+   boolean disponible=false;
+   for(int i=0; i<l.size() && !disponible; i++){
+   if(l.get(i).getModelo().equals(p.getModelo())){
+    disponible=true;
+   }
+   
+   }
+    return disponible;   
+   }
     
+   
+   
   }
     
    
