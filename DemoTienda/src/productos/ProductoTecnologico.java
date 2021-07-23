@@ -84,12 +84,7 @@ public class ProductoTecnologico {
         this.estado = estado;
         
     }
-
-    /*public void notificarTodosObservadores(Estado e){
-        e.actualizar();    
-    }*/
     
-
     @Override
     public String toString() {
         return "Producto de la marca " + marca + " modelo: "+ modelo ;
