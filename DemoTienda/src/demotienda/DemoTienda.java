@@ -5,6 +5,9 @@
  */
 package demotienda;
 
+import logistica.*;
+import productos.*;
+
 /**
  *
  * @author gabrielaramos
@@ -15,7 +18,12 @@ public class DemoTienda {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //Codigo prueba 
+        Celular producto= new Celular("AI8","Apple","Iphone 8",850,true,"Ninguno","Disponible");
+        Aerea log = new Aerea(producto,"Tienda T&T",4);
+        
+        log.entregarProducto();
     }
-    
+    // String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado
 }

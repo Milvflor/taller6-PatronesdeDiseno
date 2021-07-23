@@ -10,6 +10,7 @@ package productos;
  * @author gabrielaramos
  */
 public class ProductoTecnologico {
+    String productoID;
     String marca;
     String modelo;
     double precio;
@@ -17,7 +18,8 @@ public class ProductoTecnologico {
     String fallo;
     String estado;
 
-    public ProductoTecnologico(String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+    public ProductoTecnologico(String productoID, String marca, String modelo, double precio, boolean garantia, String fallo, String estado) {
+        this.productoID = productoID;
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
@@ -25,7 +27,8 @@ public class ProductoTecnologico {
         this.fallo = fallo;
         this.estado = estado;
     }
-    
+
+
     public void encender(){
         System.out.println("Encendiendo");
     }
@@ -82,14 +85,17 @@ public class ProductoTecnologico {
         
     }
 
-    public void notificarTodosObservadores(Estado e){
+    /*public void notificarTodosObservadores(Estado e){
         e.actualizar();    
-    }
+    }*/
     
+
     @Override
     public String toString() {
-        return "ProductoTecnologico{" + "marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + ", garantia=" + garantia + ", fallo=" + fallo + ", estado=" + estado + '}';
+        return "Producto de la marca " + marca + " modelo: "+ modelo ;
     }
+    
+
     
     
 }
