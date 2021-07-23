@@ -5,25 +5,29 @@
  */
 package demotienda;
 
-import clasesP.Mantenimiento;
-import clasesP.Proveedor;
-import clasesP.Vendedor;
-import java.util.ArrayList;
+import clasesP.Persona;
+import java.util.HashMap;
 import logistica.Logistica;
 import productos.ProductoTecnologico;
 
 /**
  *
- * @author gabrielaramos
+ * @author milvflor
  */
 public class Tienda {
-    String nombre;
-    Logistica logistica;
-    Vendedor vendedor;
-    ArrayList<Proveedor> proveedores;
-    ArrayList<Mantenimiento> asistenteMantenimiento;
+    public String nombre;
+    public Logistica logistica;
+    public Inventario inventario;
+    public HashMap<String, Persona> personal;
+    public ProductoTecnologico changeStateP;
+    
  
     
-    public void actualizarInventario(){}
+    public void addProducto(Producto p){
+    	
+    	this.inventario.get
+    }
     public void realizarEnvio(ProductoTecnologico p, Logistica l){}
+    public void changeState(String estado, ProductoTecnologico producto) {}
+    public void notify_(){};
 }
