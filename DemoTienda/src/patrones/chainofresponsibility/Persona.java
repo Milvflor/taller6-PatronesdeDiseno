@@ -12,7 +12,7 @@ import demotienda.Inventario;
  * @author gabrielaramos
  */
 public abstract class Persona {
-    String nombre;
+    private String nombre;
 
     public Persona(String nombre) {
         this.nombre = nombre;

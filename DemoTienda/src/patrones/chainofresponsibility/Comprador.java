@@ -14,19 +14,25 @@ import productos.ProductoTecnologico;
  *
  * @author gabrielaramos
  */
-public class Comprador extends Persona {
+public class Comprador extends Persona implements Handler{
 
 	private ArrayList<ProductoTecnologico> pts;
     public Comprador(String nombre) {
         super(nombre);
     }
-    
-    public void verProductos(){}
-    
-    public void solicitarCambio(){}
 
 	@Override
 	void verProductos(Inventario inv) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void solicitarCambio() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void setNext(Handler handler) {
 		// TODO Auto-generated method stub
 		
 	}
